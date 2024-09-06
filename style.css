@@ -1,0 +1,76 @@
+/* colors  */
+:root {
+	/* primary */
+	--Moderate-violet: hsl(263, 55%, 52%);
+	--lite-violet: hsl(263, 100%, 66%);
+	--Very-dark-grayish-blue: hsl(217, 19%, 35%);
+	--Very-dark-blackish-blue: hsl(219, 29%, 14%);
+	--White: hsl(0, 0%, 100%);
+
+	/* neutral */
+	--Light-gray: hsl(0, 0%, 81%);
+	--Light-grayish-blue: hsl(210, 46%, 95%);
+}
+
+body {
+	font-family: "Barlow Semi Condensed", sans-serif;
+	/* font weights 500 and 600 */
+	min-height: 100vh;
+	background-color: var(--Light-gray);
+}
+/* let's select the card  */
+
+.card-container {
+	margin: 20px;
+	display: grid;
+	grid-template-columns: repeat(4, 250px);
+	grid-template-rows: repeat(2, 250px);
+	gap: 20px;
+}
+
+/* card style  */
+.card {
+	background-color: var(--Moderate-violet);
+	/* width: 500px; */
+	border-radius: 10px;
+	padding: 25px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.card-header {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+.photo img {
+	width: 40px;
+	border-radius: 50px;
+}
+.img-border {
+	border: 3px solid var(--lite-violet);
+}
+
+.name {
+	font-size: 15px;
+	color: white;
+	font-weight: 500;
+}
+.designation {
+	color: rgba(255, 255, 255, 0.5);
+	font-size: 13px;
+	font-weight: 500;
+}
+.text-1 {
+	color: white;
+	font-weight: 600;
+	font-size: 16px;
+}
+.text-2 {
+	font-weight: 500;
+	font-size: 13px;
+	color: rgba(255, 255, 255, 0.75);
+}
+
+/* card style ends  */
