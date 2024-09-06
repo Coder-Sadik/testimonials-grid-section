@@ -23,8 +23,8 @@ This screenshot represents the output of my code.
 
 ### Links
 
-- Solution URL: [https://github.com/Coder-Sadik/four-card-feature-section](https://github.com/Coder-Sadik/four-card-feature-section)
-- Live Site URL: [https://coder-sadik.github.io/four-card-feature-section/](https://coder-sadik.github.io/four-card-feature-section/)
+- Solution URL: [https://github.com/Coder-Sadik/testimonials-grid-section](https://github.com/Coder-Sadik/testimonials-grid-section)
+- Live Site URL: [https://coder-sadik.github.io/testimonials-grid-section/](https://coder-sadik.github.io/testimonials-grid-section/)
 
 ## My process
 
