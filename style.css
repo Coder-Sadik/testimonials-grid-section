@@ -2,7 +2,8 @@
 :root {
 	/* primary */
 	--Moderate-violet: hsl(263, 55%, 52%);
-	--lite-violet: hsl(263, 100%, 66%);
+	--lite-violet: hsl(263, 100%, 66%); /*for img circle border */
+
 	--Very-dark-grayish-blue: hsl(217, 19%, 35%);
 	--Very-dark-blackish-blue: hsl(219, 29%, 14%);
 	--White: hsl(0, 0%, 100%);
@@ -12,25 +13,18 @@
 	--Light-grayish-blue: hsl(210, 46%, 95%);
 }
 
+/* font weights 500 and 600 */
 body {
 	font-family: "Barlow Semi Condensed", sans-serif;
-	/* font weights 500 and 600 */
 	min-height: 100vh;
 	background-color: var(--Light-gray);
-}
-/* let's select the card  */
-
-.card-container {
-	margin: 20px;
-	display: grid;
-	grid-template-columns: repeat(4, 250px);
-	grid-template-rows: repeat(2, 250px);
-	gap: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 /* card style  */
 .card {
-	background-color: var(--Moderate-violet);
 	/* width: 500px; */
 	border-radius: 10px;
 	padding: 25px;
@@ -74,3 +68,89 @@ body {
 }
 
 /* card style ends  */
+
+/* let's select the cards  */
+.card-1 {
+	grid-area: card-1;
+	background-color: var(--Moderate-violet);
+}
+.card-2 {
+	grid-area: card-2;
+	background-color: var(--Very-dark-grayish-blue);
+}
+.card-3 {
+	grid-area: card-3;
+	background-color: var(--White);
+}
+
+/* for white background cards */
+.white-bg.card .name {
+	color: var(--Very-dark-blackish-blue);
+}
+.white-bg.card .designation {
+	color: hsla(217, 30%, 14%, 0.5);
+}
+.white-bg.card .text-1 {
+	color: var(--Very-dark-blackish-blue);
+}
+
+.white-bg.card .text-2 {
+	color: hsla(217, 30%, 14%, 0.75);
+}
+/* done  */
+.card-4 {
+	grid-area: card-4;
+	background-color: var(--White);
+}
+.card-5 {
+	grid-area: card-5;
+	background-color: var(--Very-dark-blackish-blue);
+}
+
+.card-container {
+	margin: 20px;
+	display: grid;
+	grid-template-columns: repeat(4, 250px);
+	grid-template-rows: repeat(2, fit-content);
+	gap: 20px;
+	grid-template-areas:
+		"card-1     card-1      card-2      card-3   "
+		"card-4     card-5      card-5      card-3  ";
+}
+
+/* let's make it responsive */
+@media only screen and (max-width: 1080px) {
+	.card-container {
+		grid-template-columns: repeat(3, 250px);
+		grid-template-rows: repeat(3, fit-content);
+		grid-template-areas:
+			"card-1     card-1      card-3"
+			"card-2     card-4      card-3"
+			"card-5     card-5      card-5";
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.card-container {
+		grid-template-columns: repeat(2, 250px);
+		grid-template-rows: repeat(4, fit-content);
+		grid-template-areas:
+			"card-1     card-1 "
+			"card-2     card-3 "
+			"card-4     card-3 "
+			"card-5     card-5 ";
+	}
+}
+
+@media only screen and (max-width: 576px) {
+	.card-container {
+		grid-template-columns: repeat(1, 300px);
+		grid-template-rows: repeat(5, fit-content);
+		grid-template-areas:
+			"card-1"
+			"card-2"
+			"card-4"
+			"card-5"
+			"card-3";
+	}
+}
