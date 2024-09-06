@@ -17,7 +17,7 @@
 body {
 	font-family: "Barlow Semi Condensed", sans-serif;
 	min-height: 100vh;
-	background-color: var(--Light-gray);
+	background-color: var(--Light-grayish-blue);
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -87,6 +87,9 @@ body {
 }
 
 /* for white background cards */
+.white-bg.card {
+	box-shadow: 5px 5px 30px 5px rgba(0, 0, 0, 0.15);
+}
 .white-bg.card .name {
 	color: var(--Very-dark-blackish-blue);
 }
