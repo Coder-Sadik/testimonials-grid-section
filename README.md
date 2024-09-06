@@ -42,7 +42,7 @@ I'm participating #100DaysOfCode challenge. This is my day-5. So, I'm hopeful ab
 
 ### Useful resources
 
-- [W3Schools](https://www.w3schools.com/css/css3_flexbox_container.asp) - If you are new with display flex property then you can learn from here.
+- [grid-template-areas](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-areas) - If you are new with css grid then you can learn from here.
 
 ## Author
 
