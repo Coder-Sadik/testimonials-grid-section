@@ -73,6 +73,9 @@ body {
 .card-1 {
 	grid-area: card-1;
 	background-color: var(--Moderate-violet);
+	background-image: url(./images/bg-pattern-quotation.svg);
+	background-repeat: no-repeat;
+	background-position: top 0px right 15%;
 }
 .card-2 {
 	grid-area: card-2;
@@ -106,6 +109,9 @@ body {
 	grid-area: card-5;
 	background-color: var(--Very-dark-blackish-blue);
 }
+
+/* let's see the magic of grid-template-areas */
+/* life becomes easy when you sift from flex to grid  */
 
 .card-container {
 	margin: 20px;
